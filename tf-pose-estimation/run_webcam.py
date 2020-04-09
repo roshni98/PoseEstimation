@@ -44,7 +44,7 @@ if __name__ == '__main__':
     else:
         e = TfPoseEstimator(get_graph_path(args.model), target_size=(432, 368))
     logger.debug('cam read+')
-    cam = cv2.VideoCapture(args.camera)
+    cam = cv2.VideoCapture(0)
     if(args.camera == '0'):
         file_write_name = 'camera_0'
     else:
